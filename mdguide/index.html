@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TSMarkMail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60373132-3', 'auto');ga('send', 'pageview');
+</script>
+
+  <body>
+
+    
+
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TSMarkMail</a>
+    </div>
+    <div class="collapse navbar-collapse">   
+      <!-- Begin Navbar -->   
+      <ul class="nav navbar-nav">
+        
+          
+            
+              <li>
+            
+            
+              <a href="/">About</a>      
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/getting-started/index.html">Getting Started</a>
+            
+              </li>
+          
+        
+          
+            
+              <li class="active">
+            
+            
+              <a href="/mdguide/index.html">Markdown Guide</a>
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/faq/index.html">FAQ</a>
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/updates/index.html">Updates</a>
+            
+              </li>
+          
+        
+      </ul>
+      <!-- End Navbar -->
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>TSMarkMail</h1>
+    <p>An add-on for <a href="http://www.google.com/drive/index.html" target="_blank">Google Drive</a><sup>TM</sup> Documents</p>
+    <div class="btn-group">
+      <a href="/updates/index.html"  class="btn btn-default" role="button"><i class="fa fa-file-text"></i> Releases</a>
+      <a href="https://plus.google.com/116079073548986914998/posts"  class="btn btn-default" role="button" target="_blank"><i class="fa fa-google-plus-square"></i> Follow</a>
+      <a href="http://www.tech-streams.com/contact"  class="btn btn-default" role="button" target="_blank"><i class="fa fa-comments"></i> Support</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 hidden-xs">
+      <div class="list-group">
+        
+          
+             <a href="/mdguide/index.html#overview" class="list-group-item">Overview</a>
+          
+        
+          
+             <a href="/mdguide/index.html#paragraph" class="list-group-item">Paragraph</a>
+          
+        
+          
+             <a href="/mdguide/index.html#textemphasis" class="list-group-item">Text Emphasis</a>
+          
+        
+          
+             <a href="/mdguide/index.html#heading" class="list-group-item">Heading</a>
+          
+        
+          
+             <a href="/mdguide/index.html#blockquote" class="list-group-item">Blockquote</a>
+          
+        
+          
+             <a href="/mdguide/index.html#list" class="list-group-item">List</a>
+          
+        
+          
+             <a href="/mdguide/index.html#horizontalrule" class="list-group-item">Horizontal Rule</a>
+          
+        
+          
+             <a href="/mdguide/index.html#link" class="list-group-item">Link</a>
+          
+        
+          
+             <a href="/mdguide/index.html#image" class="list-group-item">Image</a>
+          
+        
+          
+             <a href="/mdguide/index.html#table" class="list-group-item">Table</a>
+          
+        
+          
+             <a href="/mdguide/index.html#code" class="list-group-item">Code</a>
+          
+        
+      </div>
+    </div><!-- /.col-sm-3 -->
+    <div class="col-sm-9">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Markdown Guide</h3>
+        </div>
+        <div class="panel-body">
+          <blockquote>
+<p><strong><a href="https://daringfireball.net/projects/markdown/" target="__blank">Markdown</a></strong> is a plain text <a href="https://en.wikipedia.org/wiki/Markup_language" target="__blank">markup</a> format created by <strong><a href="https://daringfireball.net/">John Gruber</a></strong>.  </p>
+</blockquote>
+
+<hr>
+
+<p><a id="overview" name="overview" href="#overview"></a></p>
+
+<h3>Overview</h3>
+
+<div class="ts-notice ts-notice-primary">
+<h4>Markdown Guide</h4>
+<p>Following is a markdown guide to help you get started with <strong>TSMarkMail</strong>.</p>
+<p>
+  <strong>To test</strong> the various markdown elements, <strong><em>copy and paste</em></strong> the code from the <strong><em>Markdown Example</em></strong> of each section below into a Google Document with <strong><em>TSMarkMail</em></strong> installed and <strong><a href="/getting-started/index.html#send">give it a try</a></strong>!
+</p>
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Important Notes about Markdown Formatting</h4>
+<p><strong>Line Breaks and Spacing Matter</strong></p>
+<ul>
+    <li>Remember to <strong>separate markdown elements</strong> in the Google Document with <strong>one or more new lines</strong> <em>(does not apply to <a href="#textemphasis">Text Emphasis</a> and <a href="#link">Links</a>)</em> - <strong><em>use the <code>&lt;Enter&gt;</code> key in the Google document to create a new line</em></strong></li>
+</ul>
+<ul>
+    <li>Remember to <strong>start element content flush with left margin</strong> of the Google Document <em>(does not apply to <a href="#textempha">Text Emphasis</a> and <a href="#link">Links</a>)</em></li>
+</ul>
+<ul>
+  <li>Be sure to read the <strong><em>Formatting</em></strong> section of each markdown element below for additional requirements</li>
+</ul>
+<p><strong>Need More Space?</strong></p>
+<ul>
+  <li>Add <code>&lt;br&gt;</code> elements to the markdown content if you need additional element separation in the rendered email</li>
+</ul>
+<div class="imgwrap">
+  <img src="/images/br.png" alt="BR Element">
+</div>
+
+<p><strong>Some markdown elements may not render as expected in all email clients</strong></p>
+
+<ul>
+  <li>Blockquotes</li>
+  <li>Code blocks</li>
+  <li>Included HTML elements</li>
+  <li><strong><em>...</em></strong></li>
+</ul>
+
+<p><strong>BEST PRACTICE: <em>Test Emails Before Sending in Production!</em></strong></p>
+
+<p></div></p>
+
+<hr>
+
+<p><a id="paragraph" name="paragraph" href="#paragraph"></a></p>
+
+<h3>Paragraph Text</h3>
+
+<p><br></p>
+
+<p>Enter paragraph text by typing it into the Google Document.</p>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">This is paragraph text.
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdparagraph.png" alt="Paragraph Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Paragraph Text Formatting...</h4>
+<ul>
+    <li>Be sure to <strong><em>start paragraph text flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>separate paragraph text</em></strong> from other elements (including other paragraphs) with <strong><em>one or more new lines</em></strong> in the Google Document.</li>
+</ul>
+<ul>
+  <li>Lines of text <strong><em>within a paragraph</em></strong> are continuous.  If you would like to separate lines <strong><em>within the same paragraph</em></strong>, add <strong><em>two space characters</em></strong> to the end of the previous line.</li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="textemphasis" name="textemphasis" href="#textemphasis"></a></p>
+
+<h3>Text Emphasis</h3>
+
+<p><br></p>
+
+<p>Create emphasis by surrounding text with special symbols. </p>
+
+<p><br></p>
+
+<p>To render text as <strong>Bold</strong>, surround text in:</p>
+
+<ul>
+<li>two consecutive asterisks <code>**</code></li>
+<li>two consecutive underscores <code>__</code><br></li>
+</ul>
+
+<p>To render text as <em>Italics</em>, surround text in:  </p>
+
+<ul>
+<li>a single asterisk <code>*</code></li>
+<li>a single underscore <code>_</code><br></li>
+</ul>
+
+<p>To render text in <strong><em>Bold Italics</em></strong>, surround text in:  </p>
+
+<ul>
+<li>three consecutive astersks <code>***</code></li>
+<li>three consecutive underscores <code>___</code><br></li>
+</ul>
+
+<p>To render text as <strike>Strikethrough</strike>, surround text in:  </p>
+
+<ul>
+<li>two consecutive tildas <code>~~</code></li>
+</ul>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Here is **Bold Text**. 
+
+Here is *Italic Text*. 
+
+Here is ***Bold Italic Text***.  
+
+Here is ~~Strikethrough Text~~. 
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+    <img src="/images/mdtextemphasis.png" alt="Text Emphasis Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Text Emphasis Formatting...</h4>
+<ul>
+    <li>Be sure there are <strong><em>no space characters between</strong></em> the surrounding emphasis symbols and the first and last characters of the text.</li>
+</ul>
+<ul>
+    <li>Text emphasis may not render as expected on all email clients.  <strong><em>Test before sending in production!</strong></em></li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="heading" name="heading" href="#heading"></a></p>
+
+<h3>Heading</h3>
+
+<p><br></p>
+
+<p>There are <strong>six levels of headings</strong> possible in markdown.   Create a heading by typing the <code>#</code> symbol followed by a space character and the heading text.  <em>(Enter the number of <code>#</code> symbols per heading level.)</em>  </p>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># I Am a Level 1 Heading
+
+## I Am a Level 2 Heading
+
+### I Am a Level 3 Heading
+
+#### I Am a Level 4 Heading
+
+##### I Am a Level 5 Heading
+
+###### I Am a Level 6 Heading
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+    <img src="/images/mdheadings.png" alt="Headings Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+  <h4>Heading Formatting...</h4>
+  <ul>
+    <li>Be sure to include <strong><em>one space character between</strong></em> the last <code>#</code> symbol and the first character of the heading text.</li>
+  </ul>
+  <ul>
+    <li>Be sure to <strong><em>start heading flush with left margin</strong></em> of the Google Document.</li>
+  </ul>
+  <ul>
+    <li>Be sure to <strong><em>separate headings</strong></em> from other elements with <strong><em>one or more new lines</strong></em> in the Google Document.</li>
+  </ul>
+</div>
+
+<hr>
+
+<p><a id="blockquote" name="blockquote" href="#blockquote"></a></p>
+
+<h3>Blockquote</h3>
+
+<p><br></p>
+
+<p>Create a <strong>blockquote</strong> by typing a <code>&gt;</code> symbol followed by a space character and the blockquote text.  Blockquotes can also be nested by typing consecutive <code>&gt;</code> symbols. </p>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; This is a blockquote.  
+
+&gt; This is another ...
+&gt;&gt; nested blockquote.
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdblockquote.png" alt="Blockquote Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Blockquote Formatting...</h4>
+<ul>
+  <li>Be sure to include <strong><em>one space character between</em></strong> the <code>&gt;</code> symbol and the first character of the blockquote text.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>start blockquotes flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>separate blockquotes</em></strong> from other elements with <strong><em>one or more new lines</em></strong> in the Google Document.</li>
+</ul>
+<ul>
+    <li>Blockquotes may not render as expected on all email clients.  <strong><em>Test before sending in production!</em></strong></li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="list" name="list" href="#list"></a></p>
+
+<h3>List</h3>
+
+<p><br></p>
+
+<p>Markdown supplies both <strong><em>Ordered</em></strong> and <strong><em>Unordered</em></strong> lists.  </p>
+
+<p><br></p>
+
+<p><strong>Ordered List:</strong></p>
+
+<p>Type the item number followed by a <code>.</code> symbol, a space character and then the item text.  <em>Each list item can also be numbered with <code>1.</code>and the correct list number will be rendered.</em>   Lists can be nested by including two space character indention.  </p>
+
+<p><strong>Unordered List:</strong> </p>
+
+<p>Type a <code>*</code>, <code>-</code> or <code>+</code> symbol followed by a space character and then the item text.  Lists can be nested by including two space character indention.  </p>
+
+<div class="ts-notice ts-notice-danger">
+<h4>CAUTION!</h4>
+<p><a href="https://support.google.com/docs/answer/3300615" target="__blank"><strong>Automatic bulleted and numbered list mode</strong></a> was added to Google Docs.  <strong><em>This will cause a problem for markdown lists, so be sure to disable this feature before entering markdown content.</em></strong></p>
+<p><strong><em>To disable</em></strong> automatic bulleted and numbered list mode:</p>
+<ul>
+  <li><strong>Select</strong> the Google Document <code>Tools</code> &gt; <code>Preferences</code> menu</li>
+  <li><strong>Uncheck</strong> the <strong><em>Automatically detect lists</em></strong> options</li>
+</ul>
+</div>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">**Ordered List:**    
+
+1. One
+2. Two
+3. Three  
+
+**Alternate Ordered List:**  
+
+1. One
+1. Two
+1. Three  
+
+
+**Nested Ordered List:**  
+
+1. One
+2. Two
+3. Three
+  1. Nested
+  2. Ordered
+  3. List  
+
+---  
+
+**Unordered Asterisk List:**  
+
+* One
+* Two
+* Three  
+
+
+**Unordered Plus List:**  
+
++ One
++ Two
++ Three  
+
+
+**Unordered Dash List:** 
+
+- One
+- Two
+- Three  
+
+**Nested Unordered List:**   
+
+* One
+* Two
+* Three
+  + Nested
+  + Unordered
+  + List
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdlists.png" alt="List Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>List Formatting...</h4>
+<ul>
+  <li>Be sure to include <strong><em>one space character between</em></strong> the list symbol and the first character of the list text.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>start top level lists flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>indent nested lists</em></strong> by including <strong><em>two space characters before</em></strong> the list element symbol.</li>
+</ul>
+<ul>
+    <li>Lists may not render as expected on all email clients.  <strong><em>Test before sending in production!</em></strong></li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="horizontalrule" name="horizontalrule" href="#horizontalrule"></a></p>
+
+<h3>Horizontal Rule</h3>
+
+<p><br></p>
+
+<p>Create a <strong>horizontal rule</strong> (lined break) by typing:   </p>
+
+<ul>
+<li>three consecutive underscores <code>___</code></li>
+<li>three consecutive dashes <code>---</code></li>
+<li>three consecutive asterisks <code>***</code> </li>
+</ul>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">___  
+
+
+---  
+
+
+***
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdhr.png" alt="Horizontal Rule Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Horizontal Rule Formatting...</h4>
+<ul>
+    <li>Be sure to <strong><em>start horizontal rule flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>separate horizontal rule</em></strong> from other elements with <strong><em>one or more new lines</em></strong> in the Google Document.</li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="link" name="link" href="#link"></a></p>
+
+<h3>Link</h3>
+
+<p><br></p>
+
+<p>Add <strong>links</strong> by typing <strong><em>link text</em></strong> enclosed in <code>[]</code> symbols followed by the <strong><em>full link url</em></strong> enclosed in <code>()</code> symbols.</p>
+
+<ul>
+<li><p><em>Example:</em> <code>[Link Text](http://someurl)</code>   </p></li>
+<li><p><em>Example with link title:</em> <code>[Link Text](http://someurl &quot;Link Title&quot;)</code> </p></li>
+</ul>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">* [Google Drive](https://drive.google.com/start)
+* [Google Drive](https://drive.google.com/start &quot;About Google Drive&quot;)
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdlinks.png" alt="Link Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Link Formatting...</h4>
+<ul>
+    <li>Be sure to separate links from surrounding text by including <strong><em>at least one space character before</em></strong> <code>[]</code> and <strong><em>at least one space character after</em></strong> <code>()</code>.</li>
+</ul>
+<ul>
+  <li>Be sure there are <strong><em>no space characters between</em></strong> link symbols <code>[]</code> and <code>()</code>.</li>
+</ul>
+<ul>
+    <li>Links may not render as expected on all email clients.  <strong><em>Test before sending in production!</em></strong></li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="image" name="image" href="#image"></a></p>
+
+<h3>Image</h3>
+
+<p><br></p>
+
+<p><strong>TSmarkMail</strong> allows <strong>two types of images</strong>:  </p>
+
+<ol>
+<li>Images included directly in Google Document</li>
+<li>Externally referenced images using markdown image symbols </li>
+</ol>
+
+<p><br></p>
+
+<p><strong>1) Images Included Directly in Google Document:</strong></p>
+
+<p>Add images directly to the Google Document using the document <code>Insert</code> &gt; <code>Image</code> menu.  <strong><em>NOTE:</em></strong> <em>DO NOT enter any image markdown for included images.  (TSMarkMail will automatically include these images in the sent email.)</em> </p>
+
+<p><br></p>
+
+<p><img src="/images/mdimageadd1.png" alt="Included Image">  </p>
+
+<p><br>
+<br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<p><img src="/images/mdimage1.png" alt="Included Image">  </p>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Formatting for Images Included Directly in Google Document...</h4>
+<ul>
+  <li><strong>DO NOT add markdown image symbols.</strong> TSMarkMail <strong><em>automatically applies</em></strong> image markdown when email is sent.</li>
+</ul>
+<ul>
+  <li>Be sure to observe <strong><em>line breaks and spacing</em></strong> information in <a href="#overview"><strong>Important Notes about Markdown Formatting section</strong></a> for proper image rendering in email.</li>
+</ul>
+<ul>
+  <li><strong>Caution:</strong> Email quotas apply to included images.  Be sure to review the <a href="/faq/index.html#quotas"><strong>FAQ page</strong></a> for more information.</li>
+</ul>
+</div>
+
+<p><br>
+<br>
+<strong>2) Externally Referenced Images using Image Markdown:</strong></p>
+
+<p>Add <em>externally referenced images</em> by typing a <code>!</code> symbol followed by the <em>image alt text</em> enclosed in <code>[]</code> symbols followed by the <em>full url of the external image</em> enclosed in <code>()</code> symbols.</p>
+
+<ul>
+<li><em>Example:</em> <code>![Image Alt Text](http://someimageurl)</code><br></li>
+</ul>
+
+<p><br>
+<br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Method 2:  Externally Referenced Image
+
+![TSMarkMail](http://techstreams.github.io/tsmarkmail/images/ts.png)  
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<p><img src="/images/mdimageadd2.png" alt="Included Image">  </p>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Formatting for Externally Referenced Images...</h4>
+<ul>
+    <li><strong>ADD markdown image symbols.</strong></li>
+</ul>
+<ul>
+  <li>Be sure to separate images from surrounding text by including <strong><em>at least one space character before</em></strong> <code>[]</code> and <strong><em>at least one space character after</em></strong> <code>()</code>.</li>
+</ul>
+<ul>
+  <li>Be sure there are <strong><em>no space characters between</em></strong> <code>[]</code> and <code>()</code>.</li>
+</ul>
+<ul>
+    <li><strong><em>External images must be public</em></strong> on the web to be viewed in email.</li>
+</ul>
+<ul>
+    <li><strong>Caution:</strong> Some email clients may require recipient authorization to view external images.</li>
+</ul>
+<p><strong><em>Test emails before sending in production!</em></strong></p>
+</div>
+
+<hr>
+
+<p><a id="table" name="table" href="#table"></a></p>
+
+<h3>Table</h3>
+
+<p><br></p>
+
+<p><strong>Tables</strong> can be created by adding pipe dividers (<code>|</code> symbol) between each <strong><em>table cell</em></strong>.  </p>
+
+<ul>
+<li><p><strong>Table Header vs Table Body</strong> - separate <strong><em>table header row</em></strong> from <strong><em>table body rows</em></strong> by adding a row of cells containing dashes   </p></li>
+<li><p><strong>Text Alignment Within Table Column</strong> - include colon <code>:</code> symbols within the <strong><em>dash row</em></strong> to define left-aligned, right-aligned, or center-aligned text in <strong><em>table body cells</em></strong>   </p></li>
+<li><p><strong>Inline Markdown</strong> - table cell text can include inline markdown such as <a href="#link">links</a>, <a href="#textemphasis">bold, italics, or strikethrough</a></p></li>
+</ul>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">| Column 1 | Column 2 |
+| ------ | ----------- |
+| row 1 | some text | 
+| row 2 | some more text | 
+| row 3 | some additional text |    
+
+---  
+
+| Left Align | Center Align | Right Align |  
+| :------ | :-----------: | ---------: |
+| row 1 | some text | $600 |
+| row 2 | some more text | $500 |
+| row 3 | some additional text | $400 |    
+
+--- 
+
+| Left Align | Center Align | Right Align |
+| :------ | :-----------: | ---------: |
+| row 1 | **some bold text** | $600 |
+| row 2 | *some italic text* | $500 |
+| row 3 | ~~some strikethrough text~~ | $400 |
+</code></pre></div>
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdtable.png" alt="Table Example">
+</div>
+
+<div class="ts-notice ts-notice-warning">
+<h4>Table Formatting...</h4>
+<ul>
+  <li>Be sure to include <strong><em>space characters between</em></strong> the <code>|</code> symbol and the table cell text.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>start table markdown flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>separate tables</em></strong> from other elements with <strong><em>one or more new lines</em></strong> in the Google Document.</li>
+</ul>
+<ul>
+    <li>Tables may not render as expected on all email clients.  <strong><em>Test before sending in production!</em></strong></li>
+</ul>
+</div>
+
+<hr>
+
+<p><a id="code" name="code" href="#code"></a></p>
+
+<h3>Code</h3>
+
+<p><br></p>
+
+<p><strong>Code</strong> snippets can be included in markdown.  </p>
+
+<ul>
+<li><p><strong>Inline Code</strong> - wrap inline code with backtick <code>&#96;</code> symbols</p></li>
+<li><p><strong>Indented Code</strong> - indent code blocks with 4 space characters</p></li>
+<li><p><strong>Fenced Code Blocks</strong> - wrap code with backtick <code>&#96;&#96;&#96;</code> symbols to create a multi-line block of code  </p></li>
+</ul>
+
+<p><br></p>
+
+<p><strong>Markdown Example:</strong></p>
+
+<div class="mdexample">
+  <pre class="source"> 
+**"Inline" code:** `var x = 1;`  
+
+
+**Indented code block:**  
+
+    // A Comment
+    var x = 1;
+    var y = 2;
+    var z = x + y;  
+
+
+**Fenced code block:**   
+
+```
+// A Comment
+var x = 1;
+var y = 2;
+var z = x + y;
+
+```
+</pre>
+</div>
+
+<p><br></p>
+
+<p><strong>Renders in Email As:</strong></p>
+
+<div class="imgwrap">
+  <img src="/images/mdcode.png" alt="Code Example">
+</div>
+ 
+
+<div class="ts-notice ts-notice-warning">
+<h4>Code Formatting...</h4>
+<ul>
+    <li>Be sure to <strong><em>start table markdown flush with left margin</em></strong> of the Google Document.</li>
+</ul>
+<ul>
+    <li>Be sure to <strong><em>separate code blocks</em></strong> from other elements with <strong><em>one or more new lines</em></strong> in the Google Document.</li>
+</ul>
+<ul>
+    <li><strong><em>No Code Syntax Highlighlighting</em></strong> is available in TSMarkMail.</li>
+</ul>
+<ul>
+    <li>Code blocks may not render as expected on all email clients.  <strong><em>Test before sending in production!</em></strong></li>
+</ul>
+</div>
+
+          
+            <hr>
+          
+          
+            
+              <a href="/getting-started/index.html" class="btn btn-small btn-default pull-left"><i class="fa fa-chevron-left"></i> Prev</a>
+            
+          
+          
+            <a href="/faq/index.html" class="btn btn-small btn-default pull-right">Next <i class="fa fa-chevron-right"></i></a>
+          
+        </div>
+      </div>
+    </div><!-- /.col-sm-9 -->
+  </div>
+</div>
+
+    <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p class="pull-left">
+    				&copy; 2015 <a href="http://www.tech-streams.com" target="__blank">Tech-Streams</a>
+  				</p> 
+			</div>
+			<div class="col-xs-6">
+				<p class="pull-right"><a href="https://sites.google.com/a/tech-streams.com/techstreams/tsmarkmail-privacy-policy" target="__blank">Privacy Policy</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+    <script src="//code.jquery.com/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

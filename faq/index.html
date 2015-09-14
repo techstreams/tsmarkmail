@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TSMarkMail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60373132-3', 'auto');ga('send', 'pageview');
+</script>
+
+  <body>
+
+    
+
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TSMarkMail</a>
+    </div>
+    <div class="collapse navbar-collapse">   
+      <!-- Begin Navbar -->   
+      <ul class="nav navbar-nav">
+        
+          
+            
+              <li>
+            
+            
+              <a href="/">About</a>      
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/getting-started/index.html">Getting Started</a>
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/mdguide/index.html">Markdown Guide</a>
+            
+              </li>
+          
+        
+          
+            
+              <li class="active">
+            
+            
+              <a href="/faq/index.html">FAQ</a>
+            
+              </li>
+          
+        
+          
+            
+              <li>
+            
+            
+              <a href="/updates/index.html">Updates</a>
+            
+              </li>
+          
+        
+      </ul>
+      <!-- End Navbar -->
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>TSMarkMail</h1>
+    <p>An add-on for <a href="http://www.google.com/drive/index.html" target="_blank">Google Drive</a><sup>TM</sup> Documents</p>
+    <div class="btn-group">
+      <a href="/updates/index.html"  class="btn btn-default" role="button"><i class="fa fa-file-text"></i> Releases</a>
+      <a href="https://plus.google.com/116079073548986914998/posts"  class="btn btn-default" role="button" target="_blank"><i class="fa fa-google-plus-square"></i> Follow</a>
+      <a href="http://www.tech-streams.com/contact"  class="btn btn-default" role="button" target="_blank"><i class="fa fa-comments"></i> Support</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 hidden-xs">
+      <div class="list-group">
+        
+          
+             <a href="/faq/index.html#general" class="list-group-item">General</a>
+          
+        
+          
+             <a href="/faq/index.html#create" class="list-group-item">Create</a>
+          
+        
+          
+             <a href="/faq/index.html#send" class="list-group-item">Send</a>
+          
+        
+          
+             <a href="/faq/index.html#quotas" class="list-group-item">Quotas</a>
+          
+        
+      </div>
+    </div><!-- /.col-sm-3 -->
+    <div class="col-sm-9">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">FAQ</h3>
+        </div>
+        <div class="panel-body">
+          <p><a id="general" name="general" href="general"></a></p>
+
+<h3>General</h3>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Why Do Externally Referenced Images Not Display in Email?</h4>
+<p>
+    <em>Certain email clients may require recipient's authorization to display images.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Will my email display the same in all email clients?</h4>
+<p>
+    <em>Email should render in all latest versions of email clients which support HTML.  <strong>However, it is advised to test emails in preferred email clients before sending in production.</strong></em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Does TSMarkMail work on all browsers?</h4>
+<p>
+    <em><strong>TSMarkMail</strong> has primarily been tested on the <a href="https://www.google.com/chrome/" target="__blank"><strong>Chrome</strong></a> browser but should work in the lastest versions of most popular browsers.</em>
+</p>
+</div>
+
+<p><a id="create" name="create" href="create"></a></p>
+
+<h3>Create</h3>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: I can't add markdown lists to my document.  What's wrong?</h4>
+<p>
+  <em><a href="https://support.google.com/docs/answer/3300615" target="__blank"><strong>Automatic bulleted and numbered list mode</strong></a> was added to Google Docs.  This will cause a problem for <a href="/mdguide/index.html#list">markdown lists</a>...so be sure to <a href="/mdguide/index.html#list">disable this feature</a> before entering markdown content.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Can I add more line spacing in rendered email?</h4>
+<p>
+    <em>Yes.  Add one or more HTML <code>&lt;br&gt;</code> elements to the email content.  See the <a href="/mdguide/index.html#overview"><strong>Markdown Guide</strong>.</a></em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Can I add HTML to markdown content?</h4>
+<p>
+    <em>Yes, but be aware that not all HTML elements may render as expected in email clients.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Can I insert elements from the Google Document <code>Insert</code> menu into the document and have them render with markdown?</h4>
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Google Document "Insert" Element</th>
+        <th>Rendered with Markdown?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Image</td>
+        <td>Yes...see <a href="/mdguide/index.html#image"><strong>Image</strong></a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Link</td>
+        <td>No...to insert see <a href="/mdguide/index.html#link"><strong>Link</strong></a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Equation</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Drawing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Table</td>
+        <td>No...to insert see <a href="/mdguide/index.html#table"><strong>Table</strong></a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Comment</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Footnote</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Special Symbols</td>
+        <td>Yes, although some symbols may not render <code>&lt;br&gt;</code> as expected in all email clients. <br> Test first!</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Horizontal Line</td>
+        <td>No...to insert see <a href="/mdguide/index.html#horizontalrule"><strong>Horizontal Rule</strong></a></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Page Number</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>11</td>
+        <td>Page Count</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>12</td>
+        <td>Page Break</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>13</td>
+        <td>Header</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>14</td>
+        <td>Footer</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>15</td>
+        <td>Bookmark</td>
+        <td>No</td>
+      </tr>
+     <tr>
+        <td>16</td>
+        <td>Table of Contents</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></div></p>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Can I format my content using the Google Document <code>Format</code> menu tools?</h4>
+<p>
+    <em>Yes, but Google Document formatting will not be rendered in email.  Only formatting specified by <a href="/mdguide/index.html"><strong><em>markdown</em></strong></a>  will render.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: I accidentally cleared the content of my document.  Is there a way to retrieve it?</h4>
+<p>
+    <em>Yes.  Click the <code>Undo</code> button on the Google Document Toolbar.</em>
+</p>
+<img src="/images/undo.png" alt="Undo Button">
+</div>
+
+<p><a id="send" name="send" href="send"></a></p>
+
+<h3>Send</h3>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: What if I need to send to a large number of recipients?</h4>
+<p>
+    <em>Try a <a href="https://support.google.com/groups/answer/2464972" target="__blank"><strong>Google Group email address</strong></a>.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Why is my recipient's address not showing in the drop down as I type in the TO, CC or BCC field?</h4>
+<p>
+  <em><strong>TSMarkMail</strong> searches your <strong><a href="https://support.google.com/mail/answer/8933" target="_blank">Google Contacts</a></strong> by <strong>name only</strong>.  Ensure that your recipient has an entry in your Google Contacts with one or more of the <strong>contact name</strong> fields populated.  <strong>NOTE: Google Apps domain contacts may not display.</strong></em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Can I select a <a href="https://support.google.com/mail/answer/30970" target="_blank">Contact Group</a> from my Google Contacts for the TO, CC or BCC field?</h4>
+<p>
+    <em>No, only individual Google Contacts will display in the field drop down list.  Try a <a href="https://support.google.com/groups/answer/2464972" target="__blank"><strong>Google Group email address</strong></a> instead.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: There is an <code>Invalid Field</code> error message in the sidebar when I try to send.  What could be wrong?</h4>
+<p>
+  <em>Check email addresses for invalid entries.  Also ensure that multiple entries are separated by a comma.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: My sent email format is not correct.  What could be wrong?</h4>
+<p>
+  <em>There may be a format or spacing issue in the markdown.  Please refer to the <a href="/mdguide/index.html"><strong>markdown guide</strong></a>.</em>
+</p>
+</div>
+
+<div class="ts-notice ts-notice-success">
+<h4>Q: Is it possible to view document images in the email preview?</h4>
+<p>
+  <em>No,  <a href="/mdguide/index.html#image"><strong>images included directly in the document</strong></a> will not show in the preview (although they will be included in the sent email).  <a href="/mdguide/index.html#image"><strong>Externally referenced images</strong></a> will show in the preview however.</em>
+</p>
+</div>
+
+<hr>
+
+<p><a id="quotas" name="quotas" href="quotas"></a></p>
+
+<h3>Quotas</h3>
+
+<p><strong><em>Google Document Add-ons</em></strong> are subject to daily quotas based upon the type of account accessing and running the add-on.  <em>(See the <strong>Quota Limits</strong> tab on the <a href="https://docs.google.com/macros/dashboard" target="__blank"><strong>Google Apps Script Dashboard</strong></a> for more information.)</em></p>
+
+<p>Following are <strong><em>Important daily quotas</em></strong> to keep in mind when using <strong>TSMarkMail</strong>:</p>
+
+<div class="table-responsive">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Important Quotas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Number of Email Recipients</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Number of Email Recipients Per Message</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Number of Email Recipients within Domain</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Email Body Size</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Number of Email Attachments Per Message <br> <em>NOTE: <a href="/mdguide/index.html#image">Images "included" in Google Document</a> count toward quota</em></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Email Total Attachments Size <br> <em>NOTE: <a href="/mdguide/index.html#image">Images "included" in Google Document</a> count toward quota</em></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Addon <em>Maximum Execution Time</em> quota</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="ts-notice ts-notice-danger">
+<h4>Receiving an Email Send Error?</h4>
+<p>
+    An <strong>"Unable to Send Email"</strong> error may indicate you are encountering a <strong>quota limitation</strong>.  
+</p>
+<ul>
+    <li>Wait for daily quotas to reset and try again!</li>
+</ul>
+</div>
+
+          
+            <hr>
+          
+          
+            
+              <a href="/mdguide/index.html" class="btn btn-small btn-default pull-left"><i class="fa fa-chevron-left"></i> Prev</a>
+            
+          
+          
+            <a href="/updates/index.html" class="btn btn-small btn-default pull-right">Next <i class="fa fa-chevron-right"></i></a>
+          
+        </div>
+      </div>
+    </div><!-- /.col-sm-9 -->
+  </div>
+</div>
+
+    <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<p class="pull-left">
+    				&copy; 2015 <a href="http://www.tech-streams.com" target="__blank">Tech-Streams</a>
+  				</p> 
+			</div>
+			<div class="col-xs-6">
+				<p class="pull-right"><a href="https://sites.google.com/a/tech-streams.com/techstreams/tsmarkmail-privacy-policy" target="__blank">Privacy Policy</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+    <script src="//code.jquery.com/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
